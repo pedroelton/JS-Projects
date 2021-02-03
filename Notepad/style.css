@@ -1,0 +1,456 @@
+:root {
+    /* 
+    
+/*
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Bebas+Neue&family=Fira+Code:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Titan+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+ 
+ CSS rules to specify families 
+ 
+ font-family: 'Abril Fatface',
+ cursive;
+ font-family: 'Raleway',
+ sans-serif;
+ font-family: 'Allura',
+ cursive;
+ font-family: 'Bebas Neue',
+ cursive;
+ font-family: 'Fira Code',
+ monospace;
+ font-family: 'Herr Von Muellerhoff',
+ cursive;
+ font-family: 'Inconsolata',
+ monospace;
+ font-family: 'Lobster',
+ cursive;
+ font-family: 'Merriweather',
+ serif;
+ font-family: 'Montserrat',
+ sans-serif;
+ font-family: 'Noto Serif TC',
+ serif;
+ font-family: 'Open Sans',
+ sans-serif;
+ font-family: 'Playfair Display',
+ serif;
+ font-family: 'Poppins',
+ sans-serif;
+ font-family: 'Press Start 2P',
+ cursive;
+ font-family: 'Roboto',
+ sans-serif;
+ font-family: 'Roboto Mono',
+ monospace;
+ font-family: 'Titan One',
+ cursive;
+ font-family: 'Ubuntu Mono',
+ monospace;
+ font-family: 'Yeseva One',
+ cursive;
+ 
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"rel="stylesheet">
+
+
+    */
+
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    font-family: 'Open Sans', -apple-system, 'roboto', 'helvetica', 'poppins', sans-serif;
+    --color-base-light-main: #f2f3ff;
+    --color-base-light-secondary: #f1f1f1;
+    --color-base-light-3: #ffffff;
+    --color-base-dark-1: #1f1f1f;
+    --color-base-dark-2: #2b2b2b;
+    --color-base-dark-3: #1b1c1e;
+    --color-accent-primary-darker: #5d5b99;
+    --color-accent-primary: #8582ca;
+    --color-accent-complementary: #f6b83a;
+}
+
+body {
+    background-color: #282A36;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-base-dark-3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-accent-primary-darker);
+}
+
+.navbar {
+
+    height: 110px;
+    width: auto;
+    grid-area: "navbar";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "logo";
+    justify-items: start;
+    align-items: start;
+    align-self: start;
+    padding: 1.5rem 4rem;
+    margin: 1.5rem;
+    background-color: #484C6A;
+    border-radius: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    max-height: 100px;
+    /*
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "logo1""logo2""logo3""logo4"; */
+}
+
+
+.mylogo {
+    max-height: 120px;
+    font-family: 'fira code', monospace;
+    font-weight: 700;
+    /* font-family: 'Press Start 2P'; */
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "dot name column bracketopen""cursor""bracketclose"; */
+
+
+}
+
+.column-css {
+    color: #FF79C6;
+    /* grid-area: "dot"; */
+    grid-area: "logo1";
+    display: flex;
+    margin: 0;
+}
+
+.name {
+    /* grid-area: "name"; */
+    color: #50FA7B;
+    grid-area: "logo1";
+    display: flex;
+    margin: 0;
+}
+
+
+.bracketopen {
+    color: var(--color-accent-complementary);
+    /* grid-area: "bracketopen"; */
+    grid-area: "logo1";
+    display: flex;
+    margin: 0;
+}
+
+.clmn {
+    color: #8BE9FD;
+    /* grid-area: "column"; */
+    grid-area: "logo2";
+    display: flex;
+    font-weight: 500;
+    margin: 0;
+}
+
+.infinite-css {
+    color: #BD93F9;
+    margin: 0;
+}
+
+.semi-column-css {
+    color: #F8F8F2;
+    margin: 0;
+}
+
+.code-css {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+
+.cursor-bar {
+    /* grid-area: "cursor"; */
+    grid-area: "logo3";
+    color: white;
+    background: white;
+    width: 5px;
+    min-height: 14px;
+    line-height: 1.2;
+    animation: blink 0.8s infinite;
+    grid-column-start: span 4;
+    display: flex;
+    margin: 0.5rem 0rem;
+    margin-left: 1rem;
+
+}
+
+@keyframes blink {
+    0% {
+        background: transparent;
+    }
+
+    50% {
+        background: rgb(255, 255, 255);
+    }
+
+    100% {
+        background: transparent;
+    }
+}
+
+.bracketclose {
+    color: var(--color-accent-complementary);
+    /* grid-area: "bracketclose"; */
+    grid-area: "logo4";
+    display: flex;
+    margin: 0;
+}
+
+#code-snipets {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #BD93F9;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.describe {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #FF79C6;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.hr-title {
+    border: 1px solid #6272A4;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hr-subtitle {
+    border: 1px dashed #6272A4;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.content-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #FFB86C;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-txt {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #F8F8F2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+    text-align: justify;
+    flex-wrap: wrap;
+    margin: 2rem 8rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #44475A;
+}
+
+.intLink {
+    cursor: pointer;
+}
+
+img.intLink {
+    border: 0;
+}
+
+#toolBar1 select {
+    font-size: 10px;
+}
+
+#textBox {
+    min-width: 60vw;
+    min-height: 35vh;
+    max-width: 60vw;
+    max-height: auto;
+    border: 0px #fff1c4 solid;
+    padding: 12px;
+    overflow: visible;
+}
+
+#textBox #sourceText {
+    padding: 0;
+    margin: 0;
+    min-width: 400px;
+    min-height: 200px;
+}
+
+#editMode label {
+    cursor: pointer;
+}
+
+.input,
+.textarea {
+    border: 0px;
+    font-family: 'fira code';
+    font-size: 0.9rem;
+
+    padding: 1px 6px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-wrap .input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.width-machine {
+    /*   Sort of a magic number to add extra space for number spinner */
+    padding: 0 1rem;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 500px;
+    line-height: 1.5;
+    box-shadow: 0px 10px 30px hsla(0, 0%, 10%, 0.15);
+
+
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "Placeholder still possible";
+    /* color: #000; */
+}
+
+/* #toolbar1,
+#toolbar2 {
+    background-color: #fff1c4;
+    display: flex;
+    height: 15px;
+    width: 100%;
+} */
+
+.add-tags,
+#switchBox {
+    border: 1px solid var(--color-accent-primary);
+    color: #292929;
+    background-color: #8682ca75;
+    height: 2.1rem;
+    width: 15rem;
+    border-radius: 7px 0px 0px 7px;
+
+
+}
+
+.add-tags-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    background-color: #8582ca;
+}
+
+.add-tags-txt {
+    color: #50FA7B;
+    font-size: medium;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+#editMode,
+.tag-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.btn-send {
+    display: flex;
+    border: 0px solid var(--color-accent-primary);
+    color: #f1f1f1;
+    background-color: var(--color-accent-primary);
+    height: 2.34rem;
+    width: 8rem;
+    border-radius: 0px 7px 7px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-send:hover {
+    border: 2px solid var(--color-accent-primary);
+    color: #F1f1f1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: transparent;
+    transition: 300ms ease-in-out;
+}
+
+#code-snippets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

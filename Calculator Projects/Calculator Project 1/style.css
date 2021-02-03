@@ -1,0 +1,297 @@
+:root {
+    /* 
+    
+/*
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Bebas+Neue&family=Fira+Code:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Titan+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+ 
+ CSS rules to specify families 
+ 
+ font-family: 'Abril Fatface',
+ cursive;
+ font-family: 'Raleway',
+ sans-serif;
+ font-family: 'Allura',
+ cursive;
+ font-family: 'Bebas Neue',
+ cursive;
+ font-family: 'Fira Code',
+ monospace;
+ font-family: 'Herr Von Muellerhoff',
+ cursive;
+ font-family: 'Inconsolata',
+ monospace;
+ font-family: 'Lobster',
+ cursive;
+ font-family: 'Merriweather',
+ serif;
+ font-family: 'Montserrat',
+ sans-serif;
+ font-family: 'Noto Serif TC',
+ serif;
+ font-family: 'Open Sans',
+ sans-serif;
+ font-family: 'Playfair Display',
+ serif;
+ font-family: 'Poppins',
+ sans-serif;
+ font-family: 'Press Start 2P',
+ cursive;
+ font-family: 'Roboto',
+ sans-serif;
+ font-family: 'Roboto Mono',
+ monospace;
+ font-family: 'Titan One',
+ cursive;
+ font-family: 'Ubuntu Mono',
+ monospace;
+ font-family: 'Yeseva One',
+ cursive;
+ 
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"rel="stylesheet">
+
+
+    */
+
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    font-family: 'Fira Code', -apple-system, 'roboto', 'Open Sans', 'helvetica', 'poppins', sans-serif;
+    --color-base-light-main: #ececec;
+    --color-base-light-secondary: #ffffff;
+    --color-base-light-3: #ffffff;
+    --color-base-dark-1: hsla(0, 0%, 56%, 0.445);
+    --color-base-dark-2: #888888;
+    --color-base-dark-3: #bcbcbc;
+    --color-accent-primary-darker: #000000;
+    --color-accent-primary: #fc7949;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+lottie-player {
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    color: #62557a;
+    padding: 2rem;
+    margin: 0;
+    background-color: #ecececd5;
+}
+
+#bg-calculator-group {
+    /* background: rgba(0, 0, 100%, 0.30);
+    box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.2);
+    backdrop-filter: blur(8.0px);
+    border-radius: 0.625rem;
+    background-image: radial-gradient(at 50% 100%, hsla(266, 100%, 54%, 0.1), hsla(246, 98%, 19%, 0.7));
+    width: 95vw; */
+    height: 90vh;
+    display: flex;
+    margin: auto;
+    border-radius: 1.5rem;
+
+}
+
+.calc-group {
+    border: 0px;
+    background-color: var(--color-base-light-main);
+    height: 76vh;
+    width: auto;
+    min-width: 448px;
+    margin: auto;
+    box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.2);
+    border-radius: 2rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.calc {
+    width: 85%;
+    height: 85%;
+    background-color: var(--color-base-light-main);
+    color: #62557a;
+    margin: auto;
+}
+
+.screen {
+    height: 10rem;
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    border-radius: 0.4rem;
+    background: var(--color-base-light-main);
+    box-shadow: inset 7px 7px 14px hsla(120, 1%, 79%, 0.7),
+        inset -7px -7px 14px hsla(0, 0%, 100%, 0.7);
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+
+
+.calc-button {
+    color: #62557a;
+    height: 4.875rem;
+    width: 4.75rem;
+    border: 0;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background: #eeefee;
+    box-shadow: 7px 7px 14px #cacbca,
+        -7px -7px 14px #ffffff;
+    margin: 0.7rem;
+}
+
+.calc-button:hover {
+    color: var(--color-base-dark-2);
+}
+
+.calc-button:active {
+    border-radius: 0.4rem;
+    background: linear-gradient(145deg, #d6d7d6, #ffffff);
+    box-shadow: 7px 7px 14px #cacbca,
+        -7px -7px 14px #ffffff;
+}
+
+.calc-button:last-child {
+    color: #8d5cff;
+}
+
+.calc-button:last-child:hover {
+    color: #ff7cde;
+}
+
+.calc-button:last-child:active {
+    border-radius: 0.4rem;
+    background: linear-gradient(145deg, #d6d7d6, #ffffff);
+    box-shadow: 7px 7px 14px #cacbca,
+        -7px -7px 14px #ffffff;
+    color: #62557a;
+}
+
+.double {
+    width: 11.25rem;
+    color: #8d5cff;
+}
+
+.double:hover {
+    color: #ff7cde;
+}
+
+.triple {
+    width: 17.5rem;
+}
+
+.calc-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+
+.devby {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding: 1.5rem;
+    margin: auto;
+    text-align: center;
+    bottom: -1;
+    color: #62557a;
+    background-color: #ececec80;
+}
+
+.fa-user-astronaut {
+    color: #62557a;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 53.125rem) {
+    body {
+        overflow: visible;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #bg-calculator-group {
+        height: 100vh;
+        display: flex;
+        margin: auto;
+        border-radius: 1.5rem;
+
+    }
+
+    .calc-group {
+        border: 0px;
+        background-color: var(--color-base-light-main);
+
+        width: 86vw;
+    }
+
+    .screen {
+        height: 8rem;
+        padding-top: 2rem;
+    }
+
+    lottie-player {
+
+        height: auto;
+        width: 360%;
+        opacity: 1;
+        display: flex;
+        margin: 0;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .devby {
+        position: static;
+        width: 100%;
+        padding: 1.5rem;
+        margin: auto;
+        text-align: center;
+        bottom: 0;
+        color: #62557a;
+        background-color: #ececec80;
+    }
+}

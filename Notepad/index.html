@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Arrays</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Bebas+Neue&family=Fira+Code:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Titan+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Personal-Projects/Notepad/style.css">
+</head>
+
+<body onload="initDoc();">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <!-- <img src="" alt="" class="mylogo"> -->
+            <div class="mylogo">
+
+                <p class="name">.PEDRO_ELTON
+                    <span class="bracketopen">&emsp;{</span></p><br>
+                <div class="code-css">
+                    <p class="clmn">&emsp;color <span class="column-css">:&emsp;</span>
+                        <p class="infinite-css">#BADA55</p>
+                        <p class="semi-column-css">;</p>
+                </div>
+                <p class="cursor-bar">&emsp;</p>
+                <p class="bracketclose">}</p>
+
+
+            </div>
+        </div>
+
+    </nav>
+    <section id="code-snippets" class="all">
+        <header class="content-subject">
+            <h1>Training JavaScript</h1>
+            <hr class="hr-title">
+            <p class="describe">
+                This is a block of notes.
+            </p>
+        </header>
+        <acticle class="content-group">
+            <header class="topic-code">
+                <h2 class="content-title">
+                    Resizable Notepad
+
+                </h2>
+            </header>
+
+            <form name="compForm" method="post" action="sample.php"
+                onsubmit="if(validateMode()){this.myDoc.value=oDoc.innerHTML;return true;}return false;">
+                <input type="hidden" name="myDoc">
+
+                <textarea id="textBox" class="textarea resize-ta content-txt" contenteditable="true">
+
+
+                </textarea>
+                <div class="tag-group">
+                    <p id="editMode"><input type="textbox" name="switchMode" id="switchBox" class="add-tags
+                        onchange=" setDocMode(this.checked);" placeholder="ADD TAGS" />
+                        <label for="switchBox" class="add-tags-2">
+                            <p><input type="submit" value="Save" class="btn-send" /></p>
+                </div>
+            </form>
+
+            <footer class="coments-about-code">
+                <p class="txt-coments-about-code">
+                    <!-- Arrays are an ordered list of something -->
+                </p>
+            </footer>
+        </acticle>
+    </section>
+
+
+    <script src="/Personal-Projects/Notepad/index.js"></script>
+</body>
+
+</html>

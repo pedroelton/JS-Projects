@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>iOS Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Bebas+Neue&family=Fira+Code:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Titan+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Artifika&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Here it starts the calculator's code -->
+    <div class="calc">
+        <!-- START screen of the calculator -->
+        <section class="screen">
+            0
+        </section>
+        <!-- END screen of the calculator -->
+        <!-- START the buttons -->
+        <section class="calc-buttons">
+            <!-- START the first ROW with the characteres C "left arrow" "divide" -->
+
+            <div class="calc-row">
+                <!-- Double is a class that define the size of the C button in the calculator -->
+                <button class="double calc-button">C</button>
+                <button class="calc-button">←</button>
+                <button class="calc-button">÷</button>
+            </div>
+            <!-- END here the first ROW with the characteres "C" "left arrow" "divide" -->
+            <!-- Second row, and so on, follows the same principle. -->
+            <div class="calc-row">
+                <button class="calc-button">7</button>
+                <button class="calc-button">8</button>
+                <button class="calc-button">9</button>
+                <button class="calc-button">×</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-button">4</button>
+                <button class="calc-button">5</button>
+                <button class="calc-button">6</button>
+                <button class="calc-button">-</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-button">3</button>
+                <button class="calc-button">2</button>
+                <button class="calc-button">1</button>
+                <button class="calc-button">+</button>
+                <!-- triple, just like double, is a class that define the size of the C button in the calculator -->
+            </div>
+            <div class="calc-row">
+                <button class="triple calc-button">0</button>
+                <button class="calc-button">=</button>
+            </div>
+        </section>
+    </div>
+    <!-- HERE the calculator iOS ends -->
+    <script src="/index.js"></script>
+</body>
+
+</html>
