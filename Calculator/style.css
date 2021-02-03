@@ -216,7 +216,7 @@ h1 {
         background-color: var(--color-base-light-main);
         width: auto;
         min-width: 448px;
-        min height: 100%;
+        min-height: 100%;
     }
 
     .screen {
