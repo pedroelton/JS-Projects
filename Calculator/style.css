@@ -24,6 +24,7 @@ body {
     background-color: var(--color-base-light-secondary);
 
 }
+
 /*This is the background, a lottiefile .JSON*/
 lottie-player {
 
@@ -51,6 +52,7 @@ h1 {
     margin: 0;
     background-color: #ecececd5;
 }
+
 /* This is the wrapper where all the code is inside */
 #bg-calculator-group {
 
@@ -60,6 +62,7 @@ h1 {
     border-radius: 1.5rem;
 
 }
+
 /* This is the body of the calculator */
 
 .calc-group {
@@ -74,6 +77,7 @@ h1 {
     overflow: hidden;
     z-index: 1;
 }
+
 /* This is the keys+screen part of thecalculator, without the borders of the body */
 .calc {
     width: 85%;
@@ -81,6 +85,7 @@ h1 {
     color: var(--color-accent-primary-darker);
     margin: auto;
 }
+
 /* This is the screen of the calculator, a section tag inside calc-group class */
 .screen {
     height: 10rem;
@@ -139,6 +144,7 @@ h1 {
         -7px -7px 14px #fff;
     color: var(--color-accent-primary-darker);
 }
+
 /* to make the C button double size */
 .double {
     width: 11.25rem;
@@ -148,10 +154,12 @@ h1 {
 .double:hover {
     color: #ff7cde;
 }
+
 /* to make the ZERO button tripe size */
 .triple {
     width: 17.5rem;
 }
+
 /* each row of the calculator, like (3 2 1 +) */
 .calc-row {
     display: flex;
@@ -159,6 +167,7 @@ h1 {
     justify-content: space-between;
     margin-bottom: 0.5%;
 }
+
 /* The p tag with my name at the bottom of the page */
 .devby {
     font-size: 1rem;
@@ -179,6 +188,7 @@ h1 {
     color: var(--color-accent-primary-darker);
     font-size: 1.5rem;
 }
+
 /* sequence of media queries to adjust the responsiveness for different screen sizes. */
 @media(max-width: 53.125rem) {
     body {
