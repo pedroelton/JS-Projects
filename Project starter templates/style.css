@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    --primary-color: #3f80e9;
+    --secondary-color: #e854a8;
+    --primary-light-color: #bbd2f7;
+    --secondary-light-color: #f6bcdd;
+    --primary-dark-color: #192d4d;
+    --secondary-dark-color: #4d1936;
+    --cta-color: #0ea472;
+    --warning-color: #f8bc54;
+    --danger-color: #f43e5c;
+    --light-base-color: #fff;
+    --light-base-color-2: #e0e0e0;
+    --light-base-color-3: #eee;
+    --gray-base-color: #777;
+    --dark-base-color: #18181B;
+    --dark-base-color-2: #333;
+    --dark-base-color-3: #374151;
+    --line-border-fill: #3f80e9;
+    --line-border-empty: #e0e0e0;
+}
+
+
+/* Some default styles I made to use often */
+/* Buttons */
+.btn {
+    /* regular button */
+    font-family: inherit;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 8px 30px;
+    /* resize the button here, in case you need */
+    width: 80px;
+    cursor: pointer;
+    transition: opacity 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s, box-shadow 0.3s ease 0s, background 0.3s ease 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 3px;
+}
+
+.a-btn {
+    /* when btn is active */
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    color: var(--light-base-color);
+}
+
+.i-btn {
+    /* when btn is inactive */
+    background-color: var(--light-base-color-2);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    color: var(--dark-base-color);
+}
+
+/* Lighter effeft when hover the buttons */
+.btn:hover {
+    filter: brightness(107%);
+}
+
+.btn:active {
+    filter: brightness(125%);
+}
+
+.btn:disabled {
+    background-color: var(--light-base-color-2);
+    color: var(--gray-base-color);
+    cursor: not-allowed;
+}
+
+/* Use the classes sm md or lg for small medium or large buttons, and resize them bellow */
+.btn.sm {
+    width: 100px;
+    height: 44px;
+}
+
+.btn.md {
+    width: 180px;
+    height: 44px;
+}
+
+.btn.lg {
+    width: 300px;
+    height: 44px;
+}
+
+/* 8px rounded corners */
+.btn.rounded {
+    border-radius: 0.5rem;
+}
+
+/* round corners */
+.btn.round {
+    border-radius: 10rem;
+}
+
+/* outline with primary color */
+.btn.outlined {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-image: none;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HERE STARTS THE CUSTOM CSS */
