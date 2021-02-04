@@ -15,7 +15,7 @@
     --danger-color: #f43e5c;
     --light-base-color: #fff;
     --light-base-color-2: #e0e0e0;
-    --light-base-color-3: #eee;
+    --light-base-color-3: #f5f5f5;
     --gray-base-color: #777;
     --dark-base-color: #18181B;
     --dark-base-color-2: #333;
@@ -40,72 +40,7 @@
     width: 80px;
     cursor: pointer;
     transition: opacity 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s, box-shadow 0.3s ease 0s, background 0.3s ease 0s;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset;
-    border-radius: 3px;
-}
-
-.a-btn {
-    /* when btn is active */
-    background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-    color: var(--light-base-color);
-}
-
-.i-btn {
-    /* when btn is inactive */
-    background-color: var(--light-base-color-2);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-    color: var(--dark-base-color);
-}
-
-/* Lighter effeft when hover the buttons */
-.btn:hover {
-    filter: brightness(107%);
-}
-
-.btn:active {
-    filter: brightness(125%);
-}
-
-.btn:disabled {
-    background-color: var(--light-base-color-2);
-    color: var(--gray-base-color);
-    cursor: not-allowed;
-}
-
-/* Use the classes sm md or lg for small medium or large buttons, and resize them bellow */
-.btn.sm {
-    width: 100px;
-    height: 44px;
-}
-
-.btn.md {
-    width: 180px;
-    height: 44px;
-}
-
-.btn.lg {
-    width: 300px;
-    height: 44px;
-}
-
-/* 8px rounded corners */
-.btn.rounded {
-    border-radius: 0.5rem;
-}
-
-/* round corners */
-.btn.round {
-    border-radius: 10rem;
-}
-
-/* outline with primary color */
-.btn.outlined {
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    background-image: none;
-
+    border: 0;
 }
 
 * {
@@ -123,12 +58,72 @@ body {
     margin: 0;
 }
 
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transform: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    padding-top: 10vh;
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
 button {
     border: 0;
+}
+
+li,
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: var(--secondary-light-color);
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    position: relative;
+    transition: tramsform 0.5s linear;
 
 }
 
-img {
-    width: 80vw;
-    height: auto;
+.circle button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    color: var(--light-base-color);
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
 }
