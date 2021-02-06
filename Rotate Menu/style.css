@@ -5,11 +5,11 @@
     font-size: 16px;
     font-weight: 400;
     --primary-color: #3f80e9;
-    --secondary-color: #e854a8;
+    --secondary-color: hsl(37, 76%, 62%);
     --primary-light-color: #bbd2f7;
-    --secondary-light-color: #f6bcdd;
+    --secondary-light-color: hsl(37, 76%, 85%);
     --primary-dark-color: #192d4d;
-    --secondary-dark-color: #4d1936;
+    --secondary-dark-color: hsl(37, 51%, 20%);
     --cta-color: #0ea472;
     --warning-color: #f8bc54;
     --danger-color: #f43e5c;
@@ -27,8 +27,8 @@
 
 /* Some default styles I made to use often */
 /* Buttons */
-.btn {
-    /* regular button */
+/* .btn {
+    regular button
     font-family: inherit;
     font-size: 13px;
     display: flex;
@@ -36,12 +36,14 @@
     align-items: center;
     margin: 5px;
     padding: 8px 30px;
-    /* resize the button here, in case you need */
+    resize the button here, in case you need
     width: 80px;
     cursor: pointer;
     transition: opacity 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s, box-shadow 0.3s ease 0s, background 0.3s ease 0s;
     border: 0;
-}
+} */
+
+
 
 * {
     box-sizing: border-box;
@@ -50,11 +52,11 @@
 /* HERE STARTS THE CUSTOM CSS */
 
 body {
-    overflow-x: hidden;
+
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100vh;
+    background-color: var(--dark-base-color-2);
+    color: var(--dark-base-color);
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -62,7 +64,7 @@ body {
     background-color: #fafafa;
     transform-origin: top left;
     transform: transform 0.5s linear;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
     padding: 50px;
     padding-top: 10vh;
@@ -112,6 +114,7 @@ ul {
     border: 0;
     font-size: 1.5rem;
     color: var(--light-base-color);
+    cursor: pointer;
 }
 
 .circle button:focus {
