@@ -1,0 +1,6 @@
+App deve ter um visual intuitivo.
+Usuário vai fazer anotações no formato de post-it. 
+Utilizart "drag and drop" para ordenar por prioridade.
+Trocar cor que indica nivel de prioridade/urgencia.
+Salvar e editar o conteúdo.
+Compartilhar.
