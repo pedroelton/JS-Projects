@@ -1,5 +1,0 @@
-peso = float(input('Digite o seu peso em kg: '))
-altura = float(input('Digite o sua altura em metros: '))
-imc = (peso/(altura*altura), 2)
-print(imc)
-print('Seu IMC é: ', imc)
