@@ -91,6 +91,7 @@ nav ul {
 }
 
 nav ul li {
+    cursor: pointer;
     text-transform: uppercase;
     color: #fff;
     margin: 40px 0;
