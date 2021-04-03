@@ -19,14 +19,10 @@ document.querySelector('button[type=submit]')
                         <div class="single-products-list">
                 <h3 class="product-name">`+val.name+`</h3>
                 <h3 class="product-price"><span>$`+val.price+`</span></h3>
-            </div>
-            <div class="total-product-sum">
-            <h2 class="total-sum">TOTAL: </h2>
-            <h2 class="total-price">R$`+val.value+`</h2>
-        </div>
-            
+            </div>          
             `            
         })
+        alert(sum)
         sum = sum.toFixed(2)
         productName.value = ""
         productPrice.value = ""

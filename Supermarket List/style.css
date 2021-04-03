@@ -27,7 +27,8 @@
     --dark-base-color-3: #333;
     --line-border-fill: #8f4015;
     --background-1: #e8b284;
-    --background-1: #c9b7a8;
+    --background-2: #c9b7a8;
+    --linear-gradient-1: linear-gradient(69.31deg, #555048 -0.09%, #8F4015 100.14%);
     --line-border-empty: transparent;
 }
 
@@ -187,12 +188,10 @@ body {
     /* padding: 1rem; */
     margin: 0;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 header {
-    background-color: var(--secondary-color);
-    padding: 20px 0;
+    background-color: var(--info-color-light) padding: 20px 0;
     text-align: center;
     margin: 0;
     margin-bottom: 3rem;
