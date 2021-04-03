@@ -274,7 +274,11 @@ a {
     margin: 0 8px;
 }
 
+button i {
+    margin: 0 8px;
+}
+
 .copyright span {
-    margin: 0 14px;
+    margin: 0 12px;
     color: var(--primary-light-color);
 }

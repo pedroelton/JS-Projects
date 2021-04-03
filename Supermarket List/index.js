@@ -2,17 +2,34 @@ var items = []
 
 document.querySelector('button[type=submit]')
     .addEventListener('click', () => {
-        var productName = document.querySelector('input[name=product-name').value
-        var productPrice = document.querySelector('input[name=product-price').value
+        var productName = document.querySelector('input[name=product-name')
+        var productPrice = document.querySelector('input[name=product-price')
 
         items.push({
-            name: productName,
-            price: productPrice
+            name: productName.value,
+            price: productPrice.value
         })
-        let productList = document.querySelector('.')
-        items.map(function (al) {
+        let productList = document.querySelector('.products-list')
+        let sum = 0
+        productList.innerHTML=""
+        items.map(function (val) {
+            sum+=parseFloat(val.value)
+            productList.innerHTML+= `
             
+                        <div class="single-products-list">
+                <h3 class="product-name">`+val.name+`</h3>
+                <h3 class="product-price"><span>$`+val.price+`</span></h3>
+            </div>
+            <div class="total-product-sum">
+            <h2 class="total-sum">TOTAL: </h2>
+            <h2 class="total-price">R$`+val.value+`</h2>
+        </div>
+            
+            `            
         })
-        
-        alert(items[0].name)
+        sum = sum.toFixed(2)
+        productName.value = ""
+        productPrice.value = ""
+        let sumElement = document.querySelector('.total-product-sum h2')
+        sumElement.innerHTML = 'R$'+sum
 })
