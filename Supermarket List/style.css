@@ -191,7 +191,8 @@ body {
 }
 
 header {
-    background-color: var(--info-color-light) padding: 20px 0;
+    background-color: var(--secondary-color);
+    padding: 20px 0;
     text-align: center;
     margin: 0;
     margin-bottom: 3rem;
