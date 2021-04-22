@@ -71,7 +71,7 @@ body {
     color: var(--dark-base-color);
 }
 
-/* Lighter effeft when hover the buttons */
+/* Lighter effect when hover the buttons */
 .btn:hover {
     filter: brightness(107%);
 }
