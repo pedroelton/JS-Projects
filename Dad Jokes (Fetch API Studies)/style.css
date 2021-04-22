@@ -58,8 +58,8 @@ body {
     height: 48px;
     cursor: pointer;
     transition: opacity 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s, box-shadow 0.3s ease 0s, background 0.3s ease 0s;
-    border: 1px solid #e4e4e4;
-    border-radius: 3px;
+    /* border: 1px solid #e4e4e4; */
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -68,6 +68,7 @@ body {
     background-color: var(--secondary-color);
     /* border: 1px solid var(--primary-color); */
     color: var(--light-base-color);
+    border: 0;
 }
 
 .i-btn {
@@ -120,8 +121,8 @@ body {
 /* outline with primary color */
 .btn.outlined {
     background-color: transparent;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1px solid var(--secondary-dark-color);
+    color: var(--secondary-dark-color);
     background-image: none;
 
 }
@@ -137,6 +138,7 @@ h3 {
     margin: 0;
     opacity: 0.5;
     letter-spacing: 2px;
+    color: var(--primary-dark-color);
 }
 
 .joke {
@@ -145,6 +147,7 @@ h3 {
     line-height: 40px;
     margin: 50px auto;
     max-width: 600px;
+    color: var(--primary-color);
 
 }
 
@@ -153,7 +156,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--gradient-green-1);
+    background-color: var(--light-base-color-2);
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     padding: 50px 20px;
