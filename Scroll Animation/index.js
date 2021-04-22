@@ -2,7 +2,7 @@ const content = document.querySelectorAll('.content')
 
 window.addEventListener('scroll', showContent)
 
-// showContent()
+showContent()
 
 function showContent() {
     const triggerBottom = window.innerHeight / 5 * 4

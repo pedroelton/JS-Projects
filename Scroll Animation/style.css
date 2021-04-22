@@ -153,20 +153,17 @@ body {
     border-radius: 8px;
     margin: 10px 0;
     padding: 2rem;
-    margin-bottom: -10.5rem;
-    transition: 200ms ease-in-out;
     flex-direction: column;
     transform: translateX(400%);
     transition: transform 0.8s ease-in-out;
 }
 
-.content.show {
-    transform: translateX(0);
-}
-
 .content:nth-of-type(even) {
     transform: translateX(-400%);
+}
 
+.content.show {
+    transform: translateX(0);
 }
 
 .content-group {
@@ -210,7 +207,7 @@ h1 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 0;
 }
 
