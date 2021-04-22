@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    --primary-color: hsl(199, 18%, 40%);
+    --secondary-color: hsl(36, 100%, 50%);
+    --primary-light-color: hsl(199, 19%, 60%);
+    --secondary-light-color: hsl(42, 100%, 64%);
+    --primary-dark-color: hsl(198, 31%, 20%);
+    --secondary-dark-color: hsl(32, 100%, 39%);
+    --cta-color: ##00c853;
+    --warning-color: #f8bc54;
+    --danger-color: #f43e5c;
+    --light-base-color: #fff;
+    --light-base-color-2: #e4e4e4;
+    --light-base-color-3: #f7f7f7;
+    --gray-base-color: #777;
+    --dark-base-color: #18181B;
+    --dark-base-color-2: #333;
+    --dark-base-color-3: #374151;
+    --line-border-fill: #3f80e9;
+    --line-border-empty: #e0e0e0;
+}
+
+
+/* Some default styles I made to use often */
+/* Buttons */
+
+body {
+    background-color: var(--light-base-color-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.btn {
+    /* regular button */
+    font-family: inherit;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 8px 30px;
+    /* resize the button here, in case you need */
+    width: 120px;
+    height: 48px;
+    cursor: pointer;
+    transition: opacity 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s, box-shadow 0.3s ease 0s, background 0.3s ease 0s;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.a-btn {
+    /* when btn is active */
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--light-base-color);
+}
+
+.i-btn {
+    /* when btn is inactive */
+    background-color: var(--light-base-color-2);
+    color: var(--dark-base-color);
+}
+
+/* Lighter effeft when hover the buttons */
+.btn:hover {
+    filter: brightness(107%);
+}
+
+.btn:active {
+    filter: brightness(125%);
+}
+
+.btn:disabled {
+    background-color: var(--light-base-color-2);
+    color: var(--gray-base-color);
+    cursor: not-allowed;
+}
+
+/* Use the classes sm md or lg for small medium or large buttons, and resize them bellow */
+.btn.sm {
+    width: 100px;
+    height: 48px;
+}
+
+.btn.md {
+    width: 180px;
+    height: 52px;
+}
+
+.btn.lg {
+    width: 300px;
+    height: 56px;
+}
+
+/* 8px rounded corners */
+.btn.rounded {
+    border-radius: 0.5rem;
+}
+
+/* round corners */
+.btn.round {
+    border-radius: 10rem;
+}
+
+/* outline with primary color */
+.btn.outlined {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-image: none;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HERE STARTS THE CUSTOM CSS */
+
+h3 {
+    text-align: center;
+    margin: 0;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.joke {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-base-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 800px;
+
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
